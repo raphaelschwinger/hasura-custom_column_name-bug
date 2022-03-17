@@ -1,0 +1,9 @@
+- name: testDatabase
+  kind: mssql
+  configuration:
+    connection_info:
+      connection_string: Driver={ODBC Driver 17 for sql server};Server=mssql;Database=testDatabase;Uid=sa;Pwd=MSsqlpassword42;
+      pool_settings:
+        idle_timeout: 5
+        max_connections: 50
+  tables: "!include testDatabase/tables/tables.yaml"

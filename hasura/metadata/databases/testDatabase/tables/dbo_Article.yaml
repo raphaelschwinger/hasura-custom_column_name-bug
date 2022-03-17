@@ -1,0 +1,7 @@
+table:
+  name: Article
+  schema: dbo
+configuration:
+  custom_column_names:
+    With Space: With_Space
+  custom_root_fields: {}
